@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d403e67d-d3a2-4d93-a9e7-f91a205e4822" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="d403e67d-d3a2-4d93-a9e7-f91a205e4822" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,8 +25,8 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="$MAVEN_REPOSITORY$" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../Maven/apache-maven-3.6.3" />
-        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.6.3\conf\settings.xml" />
+        <option name="mavenHome" value="F:/Apache Maven/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="F:\Apache Maven\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -60,6 +56,9 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -123,6 +122,7 @@
       <workItem from="1583133695344" duration="1617000" />
       <workItem from="1583135422635" duration="4825000" />
       <workItem from="1583152961663" duration="332000" />
+      <workItem from="1583154712316" duration="34000" />
     </task>
     <servers />
   </component>
@@ -138,9 +138,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="295" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583153346966" />
-    <state x="740" y="298" key="FileChooserDialogImpl" timestamp="1583138954751">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="526" y="201" key="FileChooserDialogImpl" timestamp="1583154740772">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="526" y="201" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583154740772" />
     <state x="740" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1583138954751" />
     <state width="1877" height="363" key="GridCell.Tab.0.bottom" timestamp="1583140253702">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -194,15 +195,19 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="490" y="198" key="Maven.ArtifactSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583135767887" />
-    <state x="329" y="19" key="SettingsEditor" timestamp="1583152993432">
+    <state x="329" y="11" key="SettingsEditor" timestamp="1583154744809">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="329" y="19" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583152993432" />
+    <state x="329" y="11" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583154744809" />
     <state x="463" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583135043195" />
     <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1583153362256">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583153362256" />
+    <state x="373" y="154" key="git4idea.merge.GitPullDialog" timestamp="1583154928495">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="373" y="154" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1583154928495" />
     <state x="334" y="244" key="new project wizard" timestamp="1583132523387">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
