@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d403e67d-d3a2-4d93-a9e7-f91a205e4822" name="Default Changelist" comment="" />
+    <list default="true" id="d403e67d-d3a2-4d93-a9e7-f91a205e4822" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,9 +27,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="F:\study\maven-repo" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.6.1" />
-        <option name="userSettingsFile" value="F:\study\apache-maven-3.6.1\conf\settings.xml" />
+        <option name="localRepository" value="C:\Users\Fu\Desktop\Study\repo" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Study/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="C:\Users\Fu\Desktop\Study\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -118,6 +121,7 @@
       <workItem from="1583131486564" duration="1720000" />
       <workItem from="1583133695344" duration="1617000" />
       <workItem from="1583135422635" duration="4825000" />
+      <workItem from="1583144408178" duration="1800000" />
     </task>
     <servers />
   </component>
@@ -129,9 +133,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="572" y="202" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1583134612383" />
-    <state x="740" y="298" key="FileChooserDialogImpl" timestamp="1583138954751">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="545" y="107" key="CommitChangelistDialog2" timestamp="1583153344594">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="545" y="107" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583153344594" />
+    <state x="740" y="287" key="FileChooserDialogImpl" timestamp="1583145134733">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="287" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583145134733" />
     <state x="740" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1583138954751" />
     <state width="1877" height="363" key="GridCell.Tab.0.bottom" timestamp="1583140253702">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -185,10 +194,15 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="490" y="198" key="Maven.ArtifactSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583135767887" />
-    <state x="463" y="185" key="SettingsEditor" timestamp="1583135043195">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="463" y="178" key="SettingsEditor" timestamp="1583153396106">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="463" y="178" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583153396106" />
     <state x="463" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583135043195" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583144408030">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583144408030" />
     <state x="334" y="244" key="new project wizard" timestamp="1583132523387">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
