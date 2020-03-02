@@ -15,7 +15,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="movie-app-web" target="1.8" />
       <module name="movie-appwen" target="1.8" />
+      <module name="movie-pc-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
