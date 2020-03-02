@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="movie-pcweb" />
+        <module name="movie-appweb" />
+        <module name="movie-util" />
+        <module name="movie-dao" />
+        <module name="movie-service" />
+        <module name="movie-entity" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="movie-appwen" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="movie-appweb" options="-parameters" />
+      <module name="movie-appwen" options="-parameters" />
+      <module name="movie-dao" options="-parameters" />
+      <module name="movie-entity" options="-parameters" />
+      <module name="movie-pcweb" options="-parameters" />
+      <module name="movie-service" options="-parameters" />
+      <module name="movie-util" options="-parameters" />
+    </option>
+  </component>
+</project>
