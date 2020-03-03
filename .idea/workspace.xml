@@ -2,9 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d403e67d-d3a2-4d93-a9e7-f91a205e4822" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/app.09ebb06f95ff4c729293c79136bbd134.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/comment.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/confirmOrder.34c52e65649768a8a40cbb11f6ae3042.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/detail.aa4171576cadfe555a33806d30ee79ae.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/home.42d875f689014643ebb62ec314da83d0.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/sns-login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/style1536672475627.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/vendor.aade76778e378ed7f66df3e175becfd4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/12377.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/198015791585840511582272975574.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/19801582272552035.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/4dd0d9073f8a63e158d86d922a5302eb829df7d0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/8URZhIAs1573201328894.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/a23e95f6899188498deb478539c3b5c100cc49fc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/imH809cdcwsRc.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/imHl3T3Z455Sc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/imoXtxrDfyyu2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/confirmOrder.d6130e2a7321529fcce2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/detail.d5f8fb907550dc233ec7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/hm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/home.29c94a0a23d456dd7a7a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/initialCookie.183bf82a90064a6a0090.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/jumpToH5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/manifest.94caa86e5d3d8a9bda8f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/maps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/recaptcha__zh_cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/timing.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/vendor.28047b75b535f539749f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/vendor.fd5e73123e0a5f68c3a6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/shopping_trolley.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/store_buy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/store_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/store_info.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +56,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/impl/CustomerServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/movie-dao/src/main/resources/mapper/customerInfoMapper.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/impl/CustomerServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -40,6 +74,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1YYsxRCdhcIVzm2WBhsPFII4x3b" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -55,7 +90,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/movie-pcweb/src/main/resources/static" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -123,6 +158,7 @@
       <workItem from="1583133695344" duration="1617000" />
       <workItem from="1583135422635" duration="4825000" />
       <workItem from="1583152961663" duration="332000" />
+      <workItem from="1583205225522" duration="2580000" />
     </task>
     <servers />
   </component>
@@ -199,10 +235,10 @@
     </state>
     <state x="329" y="19" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583152993432" />
     <state x="463" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583135043195" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1583153362256">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1583154480467">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583153362256" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583154480467" />
     <state x="334" y="244" key="new project wizard" timestamp="1583132523387">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
