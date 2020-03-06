@@ -6,11 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="super-service" />
         <module name="cinema-pcweb" />
-        <module name="cinema-util" />
-        <module name="cinema-dao" />
+        <module name="super-pcweb" />
+        <module name="super-util" />
+        <module name="super-dao" />
         <module name="cinema-entity" />
         <module name="cinema-service" />
+        <module name="cinema-dao" />
+        <module name="cinema-util" />
+        <module name="super-entity" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,6 +23,7 @@
       <module name="movie-appweb" target="1.8" />
       <module name="movie-appwen" target="1.8" />
       <module name="movie-pc-web" target="1.8" />
+      <module name="movie-util" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -29,6 +35,11 @@
       <module name="cinema-util" options="-parameters" />
       <module name="movie-appweb" options="-parameters" />
       <module name="movie-appwen" options="-parameters" />
+      <module name="super-dao" options="-parameters" />
+      <module name="super-entity" options="-parameters" />
+      <module name="super-pcweb" options="-parameters" />
+      <module name="super-service" options="-parameters" />
+      <module name="super-util" options="-parameters" />
     </option>
   </component>
 </project>

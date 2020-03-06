@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/cinema-dao/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cinema-dao/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cinema-entity/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cinema-pcweb/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cinema-pcweb/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cinema-service/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cinema-util/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/super-dao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/super-dao/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/super-entity/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/super-pcweb/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/super-pcweb/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/super-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/super-util/src/main/java" charset="UTF-8" />
   </component>
 </project>

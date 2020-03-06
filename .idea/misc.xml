@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/cinema-dao" />
-    <file type="web" url="file://$PROJECT_DIR$/cinema-entity" />
-    <file type="web" url="file://$PROJECT_DIR$/cinema-service" />
+    <file type="web" url="file://$PROJECT_DIR$/super-dao" />
+    <file type="web" url="file://$PROJECT_DIR$/super-entity" />
+    <file type="web" url="file://$PROJECT_DIR$/super-service" />
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
@@ -14,6 +14,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cinema-service/pom.xml" />
+        <option value="$PROJECT_DIR$/super-pcweb/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
