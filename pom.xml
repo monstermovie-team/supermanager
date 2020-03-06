@@ -4,12 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <modules>
-        <module>movie-dao</module>
-        <module>movie-entity</module>
-        <module>movie-service</module>
-        <module>movie-pcweb</module>
-        <module>movie-util</module>
-        <module>movie-appweb</module>
+        <module>cinema-dao</module>
+        <module>cinema-entity</module>
+        <module>cinema-service</module>
+        <module>cinema-pcweb</module>
+        <module>cinema-util</module>
     </modules>
 
     <parent>

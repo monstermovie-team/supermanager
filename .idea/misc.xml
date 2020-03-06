@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/movie-dao" />
-    <file type="web" url="file://$PROJECT_DIR$/movie-entity" />
-    <file type="web" url="file://$PROJECT_DIR$/movie-service" />
+    <file type="web" url="file://$PROJECT_DIR$/cinema-dao" />
+    <file type="web" url="file://$PROJECT_DIR$/cinema-entity" />
+    <file type="web" url="file://$PROJECT_DIR$/cinema-service" />
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
@@ -13,15 +13,17 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/cinema-service/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/movie-appweb/pom.xml" />
         <option value="$PROJECT_DIR$/movie-appwen/pom.xml" />
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

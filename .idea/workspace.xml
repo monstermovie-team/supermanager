@@ -1,62 +1,358 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d403e67d-d3a2-4d93-a9e7-f91a205e4822" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/app.09ebb06f95ff4c729293c79136bbd134.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/comment.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/confirmOrder.34c52e65649768a8a40cbb11f6ae3042.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/detail.aa4171576cadfe555a33806d30ee79ae.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/home.42d875f689014643ebb62ec314da83d0.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/sns-login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/style1536672475627.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/vendor.aade76778e378ed7f66df3e175becfd4.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/12377.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/198015791585840511582272975574.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/19801582272552035.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/4dd0d9073f8a63e158d86d922a5302eb829df7d0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/8URZhIAs1573201328894.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/a23e95f6899188498deb478539c3b5c100cc49fc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/imH809cdcwsRc.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/imHl3T3Z455Sc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/imoXtxrDfyyu2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/confirmOrder.d6130e2a7321529fcce2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/detail.d5f8fb907550dc233ec7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/hm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/home.29c94a0a23d456dd7a7a.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/initialCookie.183bf82a90064a6a0090.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/jumpToH5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/manifest.94caa86e5d3d8a9bda8f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/maps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/recaptcha__zh_cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/timing.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/vendor.28047b75b535f539749f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/vendor.fd5e73123e0a5f68c3a6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/shopping_trolley.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/store_buy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/store_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/store_info.html" afterDir="false" />
+    <list default="true" id="fbbb6d82-df27-43d7-8995-fbea556c2b71" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cinema-dao/src/main/java/edu/nf/movie/cinema/dao/CinemaDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-dao/src/main/resources/mapper/cinemaInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-entity/src/main/java/edu/nf/movie/cinema/entity/CinemaMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-entity/src/main/java/edu/nf/movie/cinema/entity/CinemaRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/css/dropSort.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/css/errorPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/css/frameStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/css/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/css/iconfontStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/css/jquery.mCustomScrollbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/css/login1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/css/reportForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/css/timePage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/fonts/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/fonts/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/fonts/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/fonts/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/framework/area.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/framework/cframe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/framework/china.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/framework/ddsort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/framework/echarts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/framework/frame.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/framework/html5shiv.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/framework/jquery-1.11.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/framework/jquery-ui-1.10.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/framework/jquery.mCustomScrollbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/framework/jquery.mousewheel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/framework/jquery.ztree.core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/framework/jquery.ztree.excheck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/framework/printThis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/framework/province.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/framework/respond.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/cardFMImgError.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/cardZMImgError.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/fullScreenBut_BG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/goodsPIC1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/goodsPIC2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/goodsPIC3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/goodsPIC4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/login_admin_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/login_bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/login_bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/login_fj_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/login_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/login_sh_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/other/maintain_bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/other/maintain_pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/other/maintain_pic_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/top_jt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/images/yyzzImgError.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/js/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/js/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/js/login1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/js/out_intoData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/js/timePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/js/treetable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/agent/agent_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/agent/agent_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/base/base_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/base/base_customList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/base/base_customNewList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/base/base_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/base/maintain.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/base/pages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/goodsManage/goodsType_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/goodsManage/goods_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/goodsManage/goods_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/goodsManage/goods_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/goodsManage/specifications_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/goodsManage/specifications_list1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/iconfont.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/modify_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/print/outPrintData.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/qdAPI.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/static/tgls/reportForm/reportForm1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-pcweb/src/test/java/edu/nf/movie/test/CinemaDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-service/src/main/java/edu/nf/movie/cinema/service/CinemaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cinema-util/src/main/java/edu/nf/movie/util/PasswordUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/monstermovie.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/monstermovie.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/application-dao.yml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/src/main/resources/application-dao.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/application-dao.yml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-dao/target/classes/application-dao.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/MonsterMovieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/MonsterMovieApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/movie-pcweb/target/classes/static/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-appweb/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-appweb/src/main/java/edu/nf/movie/MonsterMovieApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-appweb/src/main/java/edu/nf/movie/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-dao/src/main/java/edu/nf/movie/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/java/edu/nf/movie/customer/dao/CustomerDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/application-dao.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-dao/src/main/resources/application-dao.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/src/main/resources/mapper/customerInfoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/application-dao.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/edu/nf/movie/customer/dao/CustomerDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-dao/target/classes/mapper/customerInfoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-entity/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-entity/src/main/java/edu/nf/movie/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/customer/entity/CustomerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-entity/src/main/java/edu/nf/movie/cinema/entity/CinemaInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/customer/entity/CustomerMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/src/main/java/edu/nf/movie/customer/entity/CustomerRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/customer/entity/CustomerInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/customer/entity/CustomerMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-entity/target/classes/edu/nf/movie/customer/entity/CustomerRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-pcweb/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/MonsterMovieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/java/edu/nf/movie/MonsterMovieApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/java/edu/nf/movie/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/java/edu/nf/movie/cinema/pcweb/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/java/edu/nf/movie/cinema/pcweb/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/java/edu/nf/movie/cinema/pcweb/controller/CinemaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/java/edu/nf/movie/customer/pcweb/vo/ResultVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/java/edu/nf/movie/cinema/pcweb/vo/ResultVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-pcweb/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/app.09ebb06f95ff4c729293c79136bbd134.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/comment.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/confirmOrder.34c52e65649768a8a40cbb11f6ae3042.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/detail.aa4171576cadfe555a33806d30ee79ae.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/home.42d875f689014643ebb62ec314da83d0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/sns-login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/style1536672475627.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/css/vendor.aade76778e378ed7f66df3e175becfd4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/forgetpassword.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/12377.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/198015791585840511582272975574.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/19801582272552035.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/4dd0d9073f8a63e158d86d922a5302eb829df7d0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/8URZhIAs1573201328894.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/a23e95f6899188498deb478539c3b5c100cc49fc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/imH809cdcwsRc.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/imHl3T3Z455Sc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/img/imoXtxrDfyyu2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/confirmOrder.d6130e2a7321529fcce2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/detail.d5f8fb907550dc233ec7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/hm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/home.29c94a0a23d456dd7a7a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/initialCookie.183bf82a90064a6a0090.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/jumpToH5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/manifest.94caa86e5d3d8a9bda8f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/maps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/recaptcha__zh_cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/timing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/vendor.28047b75b535f539749f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/js/vendor.fd5e73123e0a5f68c3a6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/shopping_trolley.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/store_buy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/store_index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/src/main/resources/static/store_info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/controller/BaseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/controller/CustomerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/edu/nf/movie/customer/pcweb/vo/ResultVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/app.09ebb06f95ff4c729293c79136bbd134.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/comment.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/confirmOrder.34c52e65649768a8a40cbb11f6ae3042.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/detail.aa4171576cadfe555a33806d30ee79ae.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/home.42d875f689014643ebb62ec314da83d0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/sns-login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/style1536672475627.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/css/vendor.aade76778e378ed7f66df3e175becfd4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/forgetpassword.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/12377.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/198015791585840511582272975574.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/19801582272552035.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/4dd0d9073f8a63e158d86d922a5302eb829df7d0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/8URZhIAs1573201328894.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/a23e95f6899188498deb478539c3b5c100cc49fc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/imH809cdcwsRc.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/imHl3T3Z455Sc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/img/imoXtxrDfyyu2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/confirmOrder.d6130e2a7321529fcce2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/detail.d5f8fb907550dc233ec7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/hm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/home.29c94a0a23d456dd7a7a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/initialCookie.183bf82a90064a6a0090.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/jumpToH5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/manifest.94caa86e5d3d8a9bda8f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/maps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/recaptcha__zh_cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/timing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/vendor.28047b75b535f539749f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/js/vendor.fd5e73123e0a5f68c3a6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/shopping_trolley.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/store_buy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/store_index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-pcweb/target/classes/static/store_info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-service/src/main/java/edu/nf/movie/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/exception/UserNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-service/src/main/java/edu/nf/movie/cinema/service/exception/UserNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/edu/nf/movie/customer/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-service/src/main/java/edu/nf/movie/cinema/service/impl/CinemaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/exception/UserNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/target/classes/edu/nf/movie/customer/service/impl/CustomerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-util/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-util/src/main/java/edu/nf/movie/util/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cinema-util/src/main/java/edu/nf/movie/util/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -66,9 +362,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="C:\Users\Fu\Desktop\Study\repo" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../Study/apache-maven-3.6.1" />
-        <option name="userSettingsFile" value="C:\Users\Fu\Desktop\Study\apache-maven-3.6.1\conf\settings.xml" />
+        <option name="localRepository" value="E:\Program Files\repo" />
+        <option name="mavenHome" value="E:/Program Files/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="E:\Program Files\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -77,13 +373,14 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1YYsxRCdhcIVzm2WBhsPFII4x3b" />
+  <component name="ProjectId" id="1YZ4ydhSBeuiBlQYWaRgBU1jHW1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
-    <option name="abbreviatePackageNames" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -93,30 +390,115 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="edu.nf.movie.cinema.dao" />
+      <recent name="edu.nf.movie.cinema.service.impl" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="edu.nf.movie.customer.pcweb.config" />
-      <recent name="edu.nf.movie.customer.service.exception" />
-      <recent name="edu.nf.movie.customer.service" />
-      <recent name="edu.nf.movie.customer.dao" />
+      <recent name="edu.nf.movie.cinema.pcweb.controller" />
+      <recent name="edu.nf.test" />
+      <recent name="edu.nf.movie.cinema.dao" />
+      <recent name="edu.nf.movie.cinema.entity" />
+      <recent name="edu.nf.movie.cinema.pcweb.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\study\ideaproject\monstermovie\movie-pcweb\src\main\resources" />
-      <recent name="F:\study\ideaproject\monstermovie\movie-pcweb\src\main\java\edu\nf\movie\customer\pcweb" />
-      <recent name="F:\study\ideaproject\monstermovie\movie-dao\src\main\resources\mapper" />
-      <recent name="F:\study\ideaproject\monstermovie\movie-entity\src\main\java\edu\nf\movie\customer\entity" />
-      <recent name="F:\study\ideaproject\monstermovie\movie-appweb\src\main\java\edu\nf\movie" />
+      <recent name="E:\spring\cinemamanager\cinema-dao\src\main\resources\mapper" />
+      <recent name="E:\spring\cinemamanager\movie-util\src\main\java\edu\nf\movie\util" />
+      <recent name="E:\spring\monstermovie\movie-dao\src\main\resources\mapper" />
+      <recent name="E:\spring\monstermovie\movie-pcweb\src\main\resources\cinemabackstage\js" />
+      <recent name="E:\spring\monstermovie\movie-pcweb\src\main\resources\cinemabackstage" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\spring\monstermovie\movie-pcweb\src\main\resources\moviead" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CinemaDaoTest.loadUserByUsername (2)">
+    <configuration name="CinemaDaoTest.loadUserByUsername (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cinema-pcweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nf.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nf.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.test.CinemaDaoTest" />
+      <option name="METHOD_NAME" value="loadUserByUsername" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CinemaDaoTest.loadUserByUsername (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cinema-pcweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nf.movie.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nf.movie.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.movie.test.CinemaDaoTest" />
+      <option name="METHOD_NAME" value="loadUserByUsername" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuperAdminDaoTest.findSuperAdminByAccounts (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cinema-pcweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nf.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nf.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.test.SuperAdminDaoTest" />
+      <option name="METHOD_NAME" value="findSuperAdminByAccounts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuperAdminDaoTest.findSuperAdminByAccounts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cinema-dao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nf.movie.cinema.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nf.movie.cinema.dao" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.movie.cinema.dao.SuperAdminDaoTest" />
+      <option name="METHOD_NAME" value="findSuperAdminByAccounts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MonsterMovieApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="movie-pcweb" />
+      <module name="cinema-pcweb" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="edu.nf.movie.*" />
@@ -130,147 +512,198 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CinemaDaoTest.loadUserByUsername (2)" />
         <item itemvalue="Spring Boot.MonsterMovieApplication" />
+        <item itemvalue="JUnit.CinemaDaoTest.loadUserByUsername (1)" />
+        <item itemvalue="JUnit.SuperAdminDaoTest.findSuperAdminByAccounts (1)" />
+        <item itemvalue="JUnit.SuperAdminDaoTest.findSuperAdminByAccounts" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d403e67d-d3a2-4d93-a9e7-f91a205e4822" name="Default Changelist" comment="" />
-      <created>1583131107834</created>
+      <changelist id="fbbb6d82-df27-43d7-8995-fbea556c2b71" name="Default Changelist" comment="" />
+      <created>1583137037219</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583131107834</updated>
-      <workItem from="1583131111018" duration="330000" />
-      <workItem from="1583131486564" duration="1720000" />
-      <workItem from="1583133695344" duration="1617000" />
-      <workItem from="1583135422635" duration="4825000" />
-      <workItem from="1583219301999" duration="1815000" />
-      <workItem from="1583221214894" duration="2077000" />
-      <workItem from="1583223848655" duration="3726000" />
+      <updated>1583137037219</updated>
+      <workItem from="1583137038743" duration="82000" />
+      <workItem from="1583148571624" duration="202000" />
+      <workItem from="1583148795501" duration="4128000" />
+      <workItem from="1583202052112" duration="1380000" />
+      <workItem from="1583204049881" duration="1605000" />
+      <workItem from="1583237088655" duration="344000" />
+      <workItem from="1583237435414" duration="5377000" />
+      <workItem from="1583292557227" duration="7349000" />
+      <workItem from="1583304141143" duration="3634000" />
+      <workItem from="1583326258129" duration="3365000" />
+      <workItem from="1583329759463" duration="652000" />
+      <workItem from="1583390292476" duration="2023000" />
+      <workItem from="1583398013209" duration="1372000" />
+      <workItem from="1583409412564" duration="3137000" />
+      <workItem from="1583416937612" duration="2604000" />
+      <workItem from="1583420047173" duration="659000" />
     </task>
+    <task id="LOCAL-00001" summary="无">
+      <created>1583149734797</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583149734797</updated>
+    </task>
+    <task id="LOCAL-00002" summary="无">
+      <created>1583152942799</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583152942799</updated>
+    </task>
+    <task id="LOCAL-00003" summary="无">
+      <created>1583153125711</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583153125712</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="付金鑫修改xxx" />
-    <MESSAGE value="付金鑫修改xxxx" />
-    <option name="LAST_COMMIT_MESSAGE" value="付金鑫修改xxxx" />
+    <MESSAGE value="无" />
+    <option name="LAST_COMMIT_MESSAGE" value="无" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="572" y="202" key="#Project_Structure" timestamp="1583134612383">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="572" y="202" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1583134612383" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583220780536">
+    <state x="503" y="183" key="#Project_Structure" timestamp="1583148767050">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583220780536" />
-    <state x="740" y="287" key="FileChooserDialogImpl" timestamp="1583220082431">
+    <state x="503" y="183" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1583148767050" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583151914756">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="287" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583220082431" />
-    <state x="740" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1583138954751" />
-    <state width="1877" height="177" key="GridCell.Tab.0.bottom" timestamp="1583228017306">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583151914756" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1583307330332">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="177" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583228017306" />
-    <state width="1877" height="363" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="177" key="GridCell.Tab.0.center" timestamp="1583228017306">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583307330332" />
+    <state x="518" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1583417121530">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="177" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583228017306" />
-    <state width="1877" height="363" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253701" />
-    <state width="1877" height="177" key="GridCell.Tab.0.left" timestamp="1583228017306">
+    <state x="518" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583417121530" />
+    <state x="739" y="378" width="441" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1583294188790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="177" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583228017306" />
-    <state width="1877" height="363" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253701" />
-    <state width="1877" height="177" key="GridCell.Tab.0.right" timestamp="1583228017306">
+    <state x="739" y="378" width="441" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1583294188790" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583417327115">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="177" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583228017306" />
-    <state width="1877" height="363" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="177" key="GridCell.Tab.1.bottom" timestamp="1583228017306">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583417327115" />
+    <state x="560" y="113" key="CommitChangelistDialog2" timestamp="1583153124802">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="177" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583228017306" />
-    <state width="1877" height="363" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="177" key="GridCell.Tab.1.center" timestamp="1583228017306">
+    <state x="560" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583153124802" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1583417857685">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="177" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583228017306" />
-    <state width="1877" height="363" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="177" key="GridCell.Tab.1.left" timestamp="1583228017306">
+    <state x="666" y="275" key="FileChooserDialogImpl/0.0.1728.1040@0.0.1728.1040" timestamp="1583411252405" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583417857685" />
+    <state width="1877" height="211" key="GridCell.Tab.0.bottom" timestamp="1583419561976">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="177" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583228017306" />
-    <state width="1877" height="363" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="177" key="GridCell.Tab.1.right" timestamp="1583228017306">
+    <state width="1685" height="343" key="GridCell.Tab.0.bottom/0.0.1728.1040@0.0.1728.1040" timestamp="1583412826361" />
+    <state width="1877" height="211" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583419561976" />
+    <state width="1877" height="211" key="GridCell.Tab.0.center" timestamp="1583419561975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="177" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583228017306" />
-    <state width="1877" height="363" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="363" key="GridCell.Tab.2.bottom" timestamp="1583140253702">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1877" height="363" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="363" key="GridCell.Tab.2.center" timestamp="1583140253702">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1877" height="363" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="363" key="GridCell.Tab.2.left" timestamp="1583140253702">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1877" height="363" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state width="1877" height="363" key="GridCell.Tab.2.right" timestamp="1583140253702">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1877" height="363" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583140253702" />
-    <state x="490" y="198" key="Maven.ArtifactSearchDialog" timestamp="1583135767887">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="490" y="198" key="Maven.ArtifactSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583135767887" />
-    <state x="463" y="178" key="SettingsEditor" timestamp="1583223858041">
+    <state width="1685" height="343" key="GridCell.Tab.0.center/0.0.1728.1040@0.0.1728.1040" timestamp="1583412826360" />
+    <state width="1877" height="211" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583419561975" />
+    <state width="1877" height="211" key="GridCell.Tab.0.left" timestamp="1583419561975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="463" y="178" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583223858041" />
-    <state x="463" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583135043195" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1583153579930">
+    <state width="1685" height="343" key="GridCell.Tab.0.left/0.0.1728.1040@0.0.1728.1040" timestamp="1583412826360" />
+    <state width="1877" height="211" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583419561975" />
+    <state width="1877" height="211" key="GridCell.Tab.0.right" timestamp="1583419561976">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583153579930" />
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583221214867">
+    <state width="1685" height="343" key="GridCell.Tab.0.right/0.0.1728.1040@0.0.1728.1040" timestamp="1583412826360" />
+    <state width="1877" height="211" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583419561976" />
+    <state width="1877" height="325" key="GridCell.Tab.1.bottom" timestamp="1583419561972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583221214867" />
-    <state x="650" y="311" key="git4idea.merge.GitPullDialog" timestamp="1583153617895">
+    <state width="1877" height="325" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583419561972" />
+    <state width="1877" height="325" key="GridCell.Tab.1.center" timestamp="1583419561972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="650" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583153617895" />
-    <state x="334" y="235" key="new project wizard" timestamp="1583221330756">
+    <state width="1877" height="325" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583419561972" />
+    <state width="1877" height="325" key="GridCell.Tab.1.left" timestamp="1583419561972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="235" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1583221330756" />
-    <state x="334" y="244" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1583132523387" />
+    <state width="1877" height="325" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583419561972" />
+    <state width="1877" height="325" key="GridCell.Tab.1.right" timestamp="1583419561972">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="325" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583419561972" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1583301129583">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583301129583" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1583301129583">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583301129583" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1583301129582">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583301129582" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1583301129583">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583301129583" />
+    <state x="600" y="217" key="NewModule_or_Project.wizard" timestamp="1583417866232">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="600" y="217" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1583417866232" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1583417868965">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="396" y="94" key="SettingsEditor/0.0.1728.1040@0.0.1728.1040" timestamp="1583411284022" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583417868965" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1583153127079">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583153127079" />
+    <state x="692" y="336" key="com.intellij.ide.util.TipDialog" timestamp="1583409418147">
+      <screen x="0" y="0" width="1728" height="1040" />
+    </state>
+    <state x="692" y="336" key="com.intellij.ide.util.TipDialog/0.0.1728.1040@0.0.1728.1040" timestamp="1583409418147" />
+    <state x="769" y="336" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583398011938" />
+    <state x="711" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583398872039">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="711" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583398872039" />
+    <state x="650" y="311" key="git4idea.merge.GitPullDialog" timestamp="1583392079113">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="650" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583392079113" />
   </component>
 </project>
