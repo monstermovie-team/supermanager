@@ -21,8 +21,9 @@
         <result property="superAdminName" column="sr_name"/>
     </resultMap>
 
-    <select id="findSuperAdminByAccounts" resultMap="SuperAdminMap" parameterType="java.lang.String">
-        select su.su_id,su.su_name,su.su_accounts,su.su_password,su.su_photo,su.su_sex,su.su_telephone,su.su_address,su.su_IDcard,su.su_state,sr.sr_id,sr.sr_name
+    <select id="findSuperAdminByAccounts" resultMap="SuperAdminMap" parameterType="string">
+        select su.su_id,su.su_name,su.su_accounts,su.su_password,su.su_photo,su.su_sex,su.su_telephone,
+        su.su_address,su.su_IDcard,su.su_state,sr.sr_id,sr.sr_name
         from superadministrator_user su
         join superadministrator_user_role sur on su.su_id=sur.su_id
         join superadministrator_role sr on sur.sr_id=sur.sr_id

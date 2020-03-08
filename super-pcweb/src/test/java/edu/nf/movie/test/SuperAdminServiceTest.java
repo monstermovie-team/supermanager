@@ -17,7 +17,7 @@ public class SuperAdminServiceTest {
 
     @Test
     public void loadUserByUsername() {
-        UserDetails info = superAdminService.loadUserByUsername("123456789");
-        info.getAuthorities();
+        UserDetails info = superAdminService.loadUserByUsername("admin");
+        System.out.println(info.getPassword());
     }
 }

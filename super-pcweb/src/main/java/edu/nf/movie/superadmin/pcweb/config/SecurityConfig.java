@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.nf.movie.superadmin.service.SuperAdminService;
 import edu.nf.movie.superadmin.pcweb.vo.ResultVO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -13,6 +14,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 
@@ -111,8 +114,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/css/**", "/js/**",
-                "/**/*.html", "/**/*.jpg", "/**/*.png", "/**/*.ico");
+        web.ignoring().antMatchers("/login.html","/register.html","/forgetpassword.html","/**/*.css","/**/*.js","/**/*.png");
+    }
+
+    /**
+     * 设置密码加密的encoder
+     * @return
+     */
+    @Bean
+    public PasswordEncoder passwordEncoder(){
+        return new BCryptPasswordEncoder();
     }
 
     /**
@@ -125,7 +136,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         //auth.inMemoryAuthentication().withUser("wangl").password("{noop}123456").roles("user");
-        auth.userDetailsService(superAdminService);
+        auth.userDetailsService(superAdminService).passwordEncoder(passwordEncoder());
     }
 
     /**
