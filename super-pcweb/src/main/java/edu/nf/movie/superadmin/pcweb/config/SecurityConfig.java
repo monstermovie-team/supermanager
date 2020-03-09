@@ -1,8 +1,8 @@
 package edu.nf.movie.superadmin.pcweb.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import edu.nf.movie.superadmin.service.SuperAdminService;
 import edu.nf.movie.superadmin.pcweb.vo.ResultVO;
+import edu.nf.movie.superadmin.service.SuperAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -52,7 +52,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 //指定登陆请求的url
                 .loginProcessingUrl("/super_admin_login").permitAll()
                 //设置页面input的name属性值
-                .usernameParameter("username")
+                .usernameParameter("accounts")
                 .passwordParameter("password")
                 //验证通过后转发的url
                 //.successForwardUrl("/get_user")
@@ -114,7 +114,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/login.html","/register.html","/forgetpassword.html","/**/*.css","/**/*.js","/**/*.png");
+        web.ignoring().antMatchers("/login.html","/**/**/**.html","/**/**/**/**.html",
+                "/register.html","/forgetpassword.html","/**/*.css","/**/*.js","/**/*.png","/**/*.jpg");
     }
 
     /**

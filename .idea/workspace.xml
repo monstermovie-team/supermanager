@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbbb6d82-df27-43d7-8995-fbea556c2b71" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/css/fontawesome-all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/images/MonsterLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/js/canva_moving_effect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/js/jquery-3.3.1.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/super-dao/src/main/resources/application-dao.yml" beforeDir="false" afterPath="$PROJECT_DIR$/super-dao/src/main/resources/application-dao.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/super-dao/src/main/resources/mapper/superAdminInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/super-dao/src/main/resources/mapper/superAdminInfoMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/super-pcweb/src/main/java/edu/nf/movie/superadmin/pcweb/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/src/main/java/edu/nf/movie/superadmin/pcweb/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/super-pcweb/src/test/java/edu/nf/movie/test/SuperAdminServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/src/test/java/edu/nf/movie/test/SuperAdminServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +79,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cinemamanager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/super-pcweb/src/main/resources/static/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -95,12 +96,6 @@
       <recent name="edu.nf.movie.cinema.dao" />
       <recent name="edu.nf.movie.cinema.service.impl" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\spring\monstermovie\movie-pcweb\src\main\resources\moviead" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="edu.nf.movie.cinema.pcweb.controller" />
       <recent name="edu.nf.test" />
@@ -109,11 +104,17 @@
       <recent name="edu.nf.movie.cinema.pcweb.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\spring\supermanager\super-pcweb\src\main\resources\static\js" />
+      <recent name="E:\spring\supermanager\super-pcweb\src\main\resources\static\css" />
+      <recent name="E:\spring\supermanager\super-pcweb\src\main\resources\static\images" />
+      <recent name="E:\spring\supermanager\super-pcweb\src\main\resources\static" />
       <recent name="E:\spring\新建文件夹\supermanager\super-pcweb\src\main\resources\static\js" />
-      <recent name="E:\spring\新建文件夹\supermanager\super-pcweb\src\main\resources\static" />
-      <recent name="E:\spring\新建文件夹\supermanager\super-entity\src\main\java\edu\nf\movie\cinema\entity" />
-      <recent name="E:\spring\新建文件夹\supermanager\super-dao\src\main\resources\mapper" />
-      <recent name="E:\spring\新建文件夹\supermanager\super-dao\src\main\java\edu\nf\movie\cinema\dao" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\spring\monstermovie\movie-pcweb\src\main\resources\moviead" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.MonsterMovieApplication (1)">
@@ -231,7 +232,8 @@
       <workItem from="1583488499631" duration="123000" />
       <workItem from="1583566145196" duration="1480000" />
       <workItem from="1583649233508" duration="130000" />
-      <workItem from="1583662636550" duration="579000" />
+      <workItem from="1583662636550" duration="625000" />
+      <workItem from="1583749108072" duration="5007000" />
     </task>
     <task id="LOCAL-00001" summary="无">
       <created>1583149734797</created>
@@ -275,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583488577305</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="登陆">
+      <created>1583663237729</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583663237729</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +309,8 @@
     <MESSAGE value="无" />
     <MESSAGE value="创建影厅后台管理" />
     <MESSAGE value="创建超级管理员后台管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建超级管理员后台管理" />
+    <MESSAGE value="登陆" />
+    <option name="LAST_COMMIT_MESSAGE" value="登陆" />
   </component>
   <component name="WindowStateProjectService">
     <state x="503" y="183" key="#Project_Structure" timestamp="1583488074780">
@@ -327,55 +337,55 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="843" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583487565287" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583487392128">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583750236642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583487392128" />
-    <state x="228" y="132" key="CommitChangelistDialog2" timestamp="1583488574014">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583750236642" />
+    <state x="228" y="132" key="CommitChangelistDialog2" timestamp="1583663236443">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="228" y="132" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583488574014" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1583662941826">
+    <state x="228" y="132" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583663236443" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1583663258089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="275" key="FileChooserDialogImpl/0.0.1728.1040@0.0.1728.1040" timestamp="1583649360154" />
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583662941826" />
-    <state width="1877" height="345" key="GridCell.Tab.0.bottom" timestamp="1583663103556">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583663258089" />
+    <state width="1877" height="361" key="GridCell.Tab.0.bottom" timestamp="1583754827008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1685" height="343" key="GridCell.Tab.0.bottom/0.0.1728.1040@0.0.1728.1040" timestamp="1583412826361" />
-    <state width="1877" height="345" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583663103556" />
-    <state width="1877" height="345" key="GridCell.Tab.0.center" timestamp="1583663103555">
+    <state width="1877" height="361" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583754827008" />
+    <state width="1877" height="361" key="GridCell.Tab.0.center" timestamp="1583754827008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1685" height="343" key="GridCell.Tab.0.center/0.0.1728.1040@0.0.1728.1040" timestamp="1583412826360" />
-    <state width="1877" height="345" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583663103555" />
-    <state width="1877" height="345" key="GridCell.Tab.0.left" timestamp="1583663103555">
+    <state width="1877" height="361" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583754827008" />
+    <state width="1877" height="361" key="GridCell.Tab.0.left" timestamp="1583754827008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1685" height="343" key="GridCell.Tab.0.left/0.0.1728.1040@0.0.1728.1040" timestamp="1583412826360" />
-    <state width="1877" height="345" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583663103555" />
-    <state width="1877" height="345" key="GridCell.Tab.0.right" timestamp="1583663103556">
+    <state width="1877" height="361" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583754827008" />
+    <state width="1877" height="361" key="GridCell.Tab.0.right" timestamp="1583754827008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1685" height="343" key="GridCell.Tab.0.right/0.0.1728.1040@0.0.1728.1040" timestamp="1583412826360" />
-    <state width="1877" height="345" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583663103556" />
-    <state width="1877" height="325" key="GridCell.Tab.1.bottom" timestamp="1583567626970">
+    <state width="1877" height="361" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583754827008" />
+    <state width="1877" height="361" key="GridCell.Tab.1.bottom" timestamp="1583754827008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="325" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583567626970" />
-    <state width="1877" height="325" key="GridCell.Tab.1.center" timestamp="1583567626969">
+    <state width="1877" height="361" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583754827008" />
+    <state width="1877" height="361" key="GridCell.Tab.1.center" timestamp="1583754827008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="325" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583567626969" />
-    <state width="1877" height="325" key="GridCell.Tab.1.left" timestamp="1583567626969">
+    <state width="1877" height="361" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583754827008" />
+    <state width="1877" height="361" key="GridCell.Tab.1.left" timestamp="1583754827008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="325" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583567626969" />
-    <state width="1877" height="325" key="GridCell.Tab.1.right" timestamp="1583567626969">
+    <state width="1877" height="361" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583754827008" />
+    <state width="1877" height="361" key="GridCell.Tab.1.right" timestamp="1583754827008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="325" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583567626969" />
+    <state width="1877" height="361" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583754827008" />
     <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1583301129583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -401,10 +411,10 @@
     </state>
     <state x="396" y="94" key="SettingsEditor/0.0.1728.1040@0.0.1728.1040" timestamp="1583411284022" />
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583488285101" />
-    <state x="433" y="246" key="Vcs.Push.Dialog.v2" timestamp="1583488590143">
+    <state x="433" y="246" key="Vcs.Push.Dialog.v2" timestamp="1583663238743">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="433" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583488590143" />
+    <state x="433" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583663238743" />
     <state x="692" y="336" key="com.intellij.ide.util.TipDialog" timestamp="1583649338275">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
