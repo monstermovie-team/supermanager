@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="x-admin-sm">
+<head>
+    <title>电影信息</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/xadmin.css">
+</head>
+<body>
+<div class="x-nav">
+    <span class="layui-breadcrumb">
+        <a href="">首页</a>
+        <a><cite>电影信息</cite></a>
+    </span>
+    <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right"
+       onclick="location.reload()" title="刷新">
+        <i class="layui-icon layui-icon-refresh" style="line-height:30px"></i>
+    </a>
+</div>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-body ">
+                    <form class="layui-form layui-col-space5">
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <input type="text" class="layui-input" placeholder="请输入电影名称" name="movieName">
+                        </div>
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <select name="movieType" id="movieType">
+                                <option>电影类型</option>
+                            </select>
+                        </div>
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <select id="movieRegion" id="movieRegion">
+                                <option value="">电影区域</option>
+                            </select>
+                        </div>
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <select name="movieYear" id="movieYear">
+                                <option value="">电影年代</option>
+                            </select>
+                        </div>
+                        <div class="layui-input-inline layui-show-xs-block">
+                            <select name="movieState" id="movieState">
+                                <option value="">电影状态</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="layui-card-header">
+                    <button class="layui-btn layui-btn-danger" onclick="delAll()">
+                        <i class="layui-icon"></i>批量删除
+                    </button>
+                    <button class="layui-btn" onclick="xadmin.open('添加用户','./order-add.html',800,600)">
+                        <i class="layui-icon"></i>添加
+                    </button>
+                </div>
+                <div class="layui-card-body ">
+                    <table class="layui-table layui-form" id="movieForm">
+                        <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" name="" lay-skin="primary">
+                            </th>
+                            <th>电影编号</th>
+                            <th>电影海报</th>
+                            <th>电影名称</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="layui-card-body ">
+                    <div class="page"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="lib/layui/layui.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/xadmin.js"></script>
+<script>
+    $(function(){
+        load();
+
+        function load() {
+            $.ajax({
+                url : 'movie_type',
+                method : 'get',
+                success : function(result){
+                    if(result.code == 200){
+                        $.each(result.data,function (index,obj) {
+                            $("#movieType").append(
+                                "<option value='"+obj.movieTypeId+"'>"+obj.movieTypeMessage+"</option>"
+                            )
+                        });
+                    }else {
+                        alert(result.message);
+                    }
+                }
+            });
+            $.ajax({
+                url : 'movie_region',
+                method : 'get',
+                success : function(result){
+                    if(result.code == 200){
+                        $.each(result.data,function (index,obj) {
+                            $("#movieRegion").append(
+                                "<option value='"+obj.movieRegionId+"'>"+obj.movieRegionMessage+"</option>"
+                            )
+                        })
+                    }else {
+                        alert(result.message);
+                    }
+                }
+            });
+            $.ajax({
+                url : 'movie_year',
+                method : 'get',
+                success : function(result){
+                    if(result.code == 200){
+                        $.each(result.data,function (index,obj) {
+                            $.each(result.data,function (index,obj) {
+                                $("#movieYear").append(
+                                    "<option value='"+obj.movieYearId+"'>"+obj.movieYearMessage+"</option>"
+                                )
+                            })
+                        })
+                    }else {
+                        alert(result.message);
+                    }
+                }
+            });
+        }
+    });
+</script>
+<script>
+    layui.use(['laydate', 'form'],
+        function() {
+            var laydate = layui.laydate;
+            //执行一个laydate实例
+            laydate.render({
+                elem: '#start' //指定元素
+            });
+            //执行一个laydate实例
+            laydate.render({
+                elem: '#end' //指定元素
+            });
+        });
+</script>
+
+</html>

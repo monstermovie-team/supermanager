@@ -9,7 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2020-03-02
  */
 @SpringBootApplication
-@MapperScan(basePackages = {"edu.nf.movie.superadmin.dao"})
+@MapperScan(basePackages = {"edu.nf.movie.superadmin.dao",
+                            "edu.nf.movie.movie.dao",
+                            "edu.nf.movie.actor.dao"})
 public class MonsterMovieApplication {
 
     public static void main(String[] args) {

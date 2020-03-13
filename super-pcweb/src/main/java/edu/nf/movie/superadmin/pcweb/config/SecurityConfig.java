@@ -68,7 +68,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 //请求认证鉴权配置
                 .authorizeRequests()
                 //任何请求都需要身份认证
-                .anyRequest().authenticated()
+                //.anyRequest().authenticated()
                 .and()
                 //登出
                 .logout()
@@ -114,8 +114,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/login.html","/**/**/**.html","/**/**/**/**.html",
-                "/register.html","/forgetpassword.html","/**/*.css","/**/*.js","/**/*.png","/**/*.jpg");
+        web.ignoring().antMatchers("/*.html","/**/*.css","/**/*.js","/**/*.png");
     }
 
     /**

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.nf.movie.movie.dao.MovieDao">
+    <resultMap id="MovieMap" type="edu.nf.movie.movie.entity.MovieInfo">
+        <id property="movieId" column="movie_id"/>
+        <result property="movieName" column="movie_name"/>
+        <result property="movieEnglishName" column="movie_english_name"/>
+        <result property="movieWantToSee" column="movie_want_to_see"/>
+        <result property="movieType" column="movie_type"/>
+        <result property="movieRegion" column="movie_region"/>
+        <result property="movieYear" column="movie_year"/>
+        <result property="movieState" column="movie_state"/>
+        <result property="movieTime" column="movie_time"/>
+        <result property="movieIntroduce" column="movie_introduce"/>
+        <association property="moviesType" resultMap="MovieType"/>
+        <association property="moviesRegion" resultMap="MovieRegion"/>
+        <association property="moviesYear" resultMap="MovieYear"/>
+        <association property="moviesState" resultMap="MovieState"/>
+        <association property="actorInfo" resultMap="ActorMap"/>
+        <association property="actorJoinMovie" resultMap="ActorJoinMovie"/>
+        <association property="movieImage" resultMap="MovieImage"/>
+    </resultMap>
+
+    <resultMap id="ActorMap" type="edu.nf.movie.actor.entity.ActorInfo">
+        <id property="actorId" column="actor_id"/>
+        <result property="actorName" column="actor_name"/>
+        <result property="actorEnglishName" column="actor_english_name"/>
+        <result property="actorIdentity" column="actor_identity"/>
+        <result property="actorBirthday" column="actor_birthday"/>
+        <result property="actorSex" column="actor_sex"/>
+        <result property="actorIntroduce" column="actor_introduce"/>
+        <result property="actorBirthplace" column="actor_birthplace"/>
+        <result property="actorNationality" column="actor_nationality"/>
+        <result property="actorGraduation" column="actor_graduation"/>
+        <result property="actorPrize" column="actor_prize"/>
+    </resultMap>
+
+    <resultMap id="ActorJoinMovie" type="edu.nf.movie.actor.entity.ActorJoinMovie">
+        <result property="actorId" column="actor_id"/>
+        <result property="movieId" column="movie_id"/>
+    </resultMap>
+
+    <resultMap id="MovieType" type="edu.nf.movie.movie.entity.MovieType">
+        <id property="movieTypeId" column="mt_id"/>
+        <result property="movieTypeMessage" column="mt_message"/>
+    </resultMap>
+
+    <resultMap id="MovieRegion" type="edu.nf.movie.movie.entity.MovieRegion">
+        <id property="movieRegionId" column="mr_id"/>
+        <result property="movieRegionMessage" column="mr_message"/>
+    </resultMap>
+
+    <resultMap id="MovieYear" type="edu.nf.movie.movie.entity.MovieYear">
+        <id property="movieYearId" column="my_id"/>
+        <result property="movieYearMessage" column="my_message"/>
+    </resultMap>
+
+    <resultMap id="MovieState" type="edu.nf.movie.movie.entity.MovieState">
+        <id property="movieStateId" column="ms_id"/>
+        <result property="movieStateMessage" column="ms_message"/>
+    </resultMap>
+
+    <resultMap id="MovieImage" type="edu.nf.movie.movie.entity.MovieImage">
+        <id property="movieId" column="mi_id"/>
+        <result property="movieImageId" column="mi_movie_id"/>
+        <result property="movieImagePath" column="mi_path"/>
+        <result property="movieImageType" column="mi_type"/>
+    </resultMap>
+
+
+    <select id="movieInfoList" resultMap="MovieMap">
+        select movie_id,movie_name,movie_english_name,movie_want_to_see,mt_message,mr_message,my_message,ms_message,movie_time,movie_introduce
+        from movie_info mi
+        left join movie_type mt on mi.movie_type=mt.mt_id
+        left join movie_region mr on mi.movie_region=mr.mr_id
+        left join movie_year my on mi.movie_year=my.my_id
+        left join movie_state ms on mi.movie_state=ms.ms_id
+    </select>
+
+    <select id="movieInfoListByState" resultMap="MovieMap"  parameterType="java.lang.Integer">
+        select movie_id,movie_name,movie_english_name,movie_want_to_see,mt_message,mr_message,my_message,ms_message,movie_time,movie_introduce
+        from movie_info mi
+        left join movie_type mt on mi.movie_type=mt.mt_id
+        left join movie_region mr on mi.movie_region=mr.mr_id
+        left join movie_year my on mi.movie_year=my.my_id
+        left join movie_state ms on mi.movie_state=ms.ms_id
+        where ms_id = #{State}
+    </select>
+
+
+    <select id="movieTypeList" resultMap="MovieType">
+        select mt_id,mt_message from movie_type order by mt_id asc
+    </select>
+
+    <select id="movieYearList" resultMap="MovieYear">
+        select my_id,my_message from movie_year order by my_id desc
+    </select>
+
+    <select id="movieRegionList" resultMap="MovieRegion">
+        select mr_id,mr_message from movie_region order by mr_id asc
+    </select>
+
+
+    <select id="findMovie" resultMap="MovieMap" parameterType="integer">
+        select movie_id,movie_name,movie_english_name,movie_want_to_see,mt_message,mr_message,my_message,ms_message,movie_time,movie_introduce
+        from movie_info mi
+        left join movie_type mt on mi.movie_type=mt.mt_id
+        left join movie_region mr on mi.movie_region=mr.mr_id
+        left join movie_year my on mi.movie_year=my.my_id
+        left join movie_state ms on mi.movie_state=ms.ms_id
+				where movie_id = #{movieId}
+    </select>
+
+    <select id="moviePoster" resultType="string" parameterType="integer">
+        select mi_path from movie_image where mi_movie_id = #{movieId} and mi_type=1
+    </select>
+
+
+    <select id="listMoviePoster" resultType="string" parameterType="integer">
+        select mi_path from movie_image where mi_movie_id = #{movieId} and mi_type=2
+    </select>
+
+    <select id="listMovieActor" resultMap="MovieMap" parameterType="integer">
+        select mi.movie_id,mi.movie_name,mo.mi_path from movie_info mi
+            left join movie_image mo on mo.mi_movie_id=mi.movie_id
+            left join actor_join_movie ajm on ajm.movie_id=mi.movie_id
+            left join actor_info ai on ai.actor_id=ajm.actor_id where ai.actor_id =#{actorId} and mo.mi_type=1
+    </select>
+
+
+</mapper>

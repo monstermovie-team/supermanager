@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.nf.movie.superadmin.dao.SuperAdminDao">
+    
+    <resultMap id="SuperAdminMap" type="edu.nf.movie.superadmin.entity.SuperAdminInfo">
+        <id property="superAdminId" column="su_id"/>
+        <result property="superAdminName" column="su_name"/>
+        <result property="superAdminAccounts" column="su_accounts"/>
+        <result property="superAdminPassword" column="su_password"/>
+        <result property="superAdminPhoto" column="su_photo"/>
+        <result property="superAdminSex" column="su_sex"/>
+        <result property="superAdminTelephone" column="su_telephone"/>
+        <result property="superAdminAddress" column="su_address"/>
+        <result property="superAdminIDCard" column="su_IDcard"/>
+        <result property="superAdminState" column="su_state"/>
+    </resultMap>
+
+    <resultMap id="roleMap" type="edu.nf.movie.superadmin.entity.SuperAdminRole">
+        <id property="superAdminId" column="sr_id"/>
+        <result property="superAdminName" column="sr_name"/>
+    </resultMap>
+
+    <select id="findSuperAdminByAccounts" resultMap="SuperAdminMap" parameterType="string">
+        select su.su_id,su.su_name,su.su_accounts,su.su_password,su.su_photo,su.su_sex,su.su_telephone,
+        su.su_address,su.su_IDcard,su.su_state,sr.sr_id,sr.sr_name
+        from superadministrator_user su
+        join superadministrator_user_role sur on su.su_id=sur.su_id
+        join superadministrator_role sr on sur.sr_id=sur.sr_id
+        where su.su_accounts = #{accounts}
+    </select>
+
+</mapper>
