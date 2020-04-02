@@ -2,31 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbbb6d82-df27-43d7-8995-fbea556c2b71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/super-dao/src/main/java/edu/nf/movie/movie/dao/MovieDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-dao/src/main/resources/mapper/movieinfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-entity/src/main/java/edu/nf/movie/actor/entity/ActorImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-entity/src/main/java/edu/nf/movie/actor/entity/ActorInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-entity/src/main/java/edu/nf/movie/actor/entity/ActorJoinMovie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-entity/src/main/java/edu/nf/movie/movie/entity/MovieImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-entity/src/main/java/edu/nf/movie/movie/entity/MovieInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-entity/src/main/java/edu/nf/movie/movie/entity/MovieRegion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-entity/src/main/java/edu/nf/movie/movie/entity/MovieState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-entity/src/main/java/edu/nf/movie/movie/entity/MovieType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-entity/src/main/java/edu/nf/movie/movie/entity/MovieYear.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-pcweb/src/main/java/edu/nf/movie/movie/pcweb/controller/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-pcweb/src/main/java/edu/nf/movie/movie/pcweb/controller/MovieController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-pcweb/src/main/java/edu/nf/movie/movie/pcweb/vo/ResultVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/movie-info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-pcweb/src/test/java/edu/nf/movie/test/MovieTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-service/src/main/java/edu/nf/movie/exception/DataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-service/src/main/java/edu/nf/movie/movie/service/MovieService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/super-pcweb/src/main/java/edu/nf/movie/superadmin/pcweb/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/addMovieInfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/css/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/js/jquery.pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/updateMovieInfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/super-util/src/main/java/edu/nf/movie/util/FileNameUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/super-util/src/main/java/edu/nf/movie/util/UploadUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/super-util/src/main/java/edu/nf/movie/util/UploadUtil2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-dao/src/main/java/edu/nf/movie/movie/dao/MovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/super-dao/src/main/java/edu/nf/movie/movie/dao/MovieDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-dao/src/main/resources/mapper/movieinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/super-dao/src/main/resources/mapper/movieinfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-dao/target/classes/edu/nf/movie/movie/dao/MovieDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/super-dao/target/classes/edu/nf/movie/movie/dao/MovieDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-dao/target/classes/mapper/movieinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/super-dao/target/classes/mapper/movieinfoMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/super-pcweb/src/main/java/edu/nf/movie/MonsterMovieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/src/main/java/edu/nf/movie/MonsterMovieApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/super-pcweb/src/main/java/edu/nf/movie/superadmin/pcweb/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/src/main/java/edu/nf/movie/superadmin/pcweb/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-pcweb/src/main/java/edu/nf/movie/movie/pcweb/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/src/main/java/edu/nf/movie/movie/pcweb/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-pcweb/src/main/java/edu/nf/movie/movie/pcweb/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/src/main/java/edu/nf/movie/movie/pcweb/controller/MovieController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/super-pcweb/src/test/java/edu/nf/movie/test/SuperAdminServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/src/test/java/edu/nf/movie/test/SuperAdminServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/movie-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/src/main/resources/static/movie-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-pcweb/src/test/java/edu/nf/movie/test/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/src/test/java/edu/nf/movie/test/MovieTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/target/classes/edu/nf/movie/MonsterMovieApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-pcweb/target/classes/edu/nf/movie/movie/pcweb/controller/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/target/classes/edu/nf/movie/movie/pcweb/controller/BaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-pcweb/target/classes/edu/nf/movie/movie/pcweb/controller/MovieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/target/classes/edu/nf/movie/movie/pcweb/controller/MovieController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-pcweb/target/classes/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/target/classes/static/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-pcweb/target/classes/static/movie-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/super-pcweb/target/classes/static/movie-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-service/src/main/java/edu/nf/movie/movie/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/super-service/src/main/java/edu/nf/movie/movie/service/MovieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/super-service/src/main/java/edu/nf/movie/movie/service/impl/MovieServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-service/target/classes/edu/nf/movie/movie/service/MovieService.class" beforeDir="false" afterPath="$PROJECT_DIR$/super-service/target/classes/edu/nf/movie/movie/service/MovieService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-service/target/classes/edu/nf/movie/movie/service/impl/MovieServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/super-service/target/classes/edu/nf/movie/movie/service/impl/MovieServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/super-util/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +51,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="supermanager" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -98,7 +106,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/super-pcweb/src/main/java/edu/nf/movie/movie/pcweb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../monstermovie" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -108,7 +116,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -122,18 +130,18 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.nf.movie.util" />
+      <recent name="edu.nf.movie.superadmin.pcweb.interceptors" />
       <recent name="edu.nf.movie.test" />
       <recent name="edu.nf.movie.exception" />
       <recent name="edu.nf.movie.movie.service.impl" />
-      <recent name="edu.nf.movie.movie.service" />
-      <recent name="edu.nf.movie.movie.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\study\ideaproject\supermanager\super-pcweb\src\main\resources\static\css" />
+      <recent name="F:\study\ideaproject\supermanager\super-pcweb\src\main\resources\static\js" />
       <recent name="F:\study\ideaproject\supermanager\super-pcweb\src\main\java\edu\nf\movie\movie\pcweb" />
       <recent name="F:\study\ideaproject\supermanager\super-dao\src\main\resources\mapper" />
       <recent name="F:\study\ideaproject\supermanager\super-entity\src\main\java\edu\nf\movie\actor\entity" />
-      <recent name="F:\study\ideaproject\supermanager\super-entity\src\main\java\edu\nf\movie\movie\entity" />
-      <recent name="E:\spring\supermanager\super-pcweb\src\main\resources\static\js" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.MonsterMovieApplication (1)">
@@ -268,7 +276,42 @@
       <workItem from="1583649233508" duration="130000" />
       <workItem from="1583662636550" duration="625000" />
       <workItem from="1583749108072" duration="5007000" />
-      <workItem from="1584063678812" duration="11552000" />
+      <workItem from="1584063678812" duration="13698000" />
+      <workItem from="1584078282653" duration="803000" />
+      <workItem from="1584084767285" duration="176000" />
+      <workItem from="1584144614518" duration="4257000" />
+      <workItem from="1584149889443" duration="8440000" />
+      <workItem from="1584159045862" duration="4872000" />
+      <workItem from="1584236848460" duration="868000" />
+      <workItem from="1584247836029" duration="1809000" />
+      <workItem from="1584329638078" duration="14500000" />
+      <workItem from="1584449676685" duration="852000" />
+      <workItem from="1584497975078" duration="1401000" />
+      <workItem from="1584499442502" duration="20000" />
+      <workItem from="1584501493042" duration="3545000" />
+      <workItem from="1584505409260" duration="2938000" />
+      <workItem from="1584580994859" duration="673000" />
+      <workItem from="1584581678419" duration="45000" />
+      <workItem from="1584583093907" duration="3600000" />
+      <workItem from="1584586751145" duration="96000" />
+      <workItem from="1584586874072" duration="96000" />
+      <workItem from="1584587051978" duration="69000" />
+      <workItem from="1584587672145" duration="3460000" />
+      <workItem from="1584591533338" duration="3061000" />
+      <workItem from="1584599553673" duration="599000" />
+      <workItem from="1584663205771" duration="9066000" />
+      <workItem from="1584674371244" duration="292000" />
+      <workItem from="1584675132802" duration="3532000" />
+      <workItem from="1584679334971" duration="542000" />
+      <workItem from="1584750447093" duration="74000" />
+      <workItem from="1584754089358" duration="7211000" />
+      <workItem from="1584761427819" duration="4357000" />
+      <workItem from="1584767082412" duration="385000" />
+      <workItem from="1584929242357" duration="420000" />
+      <workItem from="1585718542027" duration="343000" />
+      <workItem from="1585719522930" duration="1105000" />
+      <workItem from="1585744767032" duration="1157000" />
+      <workItem from="1585789442628" duration="245000" />
     </task>
     <task id="LOCAL-00001" summary="无">
       <created>1583149734797</created>
@@ -319,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583663237729</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="提交">
+      <created>1584075590918</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584075590918</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +395,8 @@
     <MESSAGE value="创建影厅后台管理" />
     <MESSAGE value="创建超级管理员后台管理" />
     <MESSAGE value="登陆" />
-    <option name="LAST_COMMIT_MESSAGE" value="登陆" />
+    <MESSAGE value="提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="503" y="183" key="#Project_Structure" timestamp="1583488074780">
@@ -356,10 +407,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583151914756" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1583307330332">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1584756879359">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583307330332" />
+    <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1584756879359" />
     <state x="518" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1583417121530">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -376,90 +428,96 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583750236642" />
-    <state x="228" y="132" key="CommitChangelistDialog2" timestamp="1583754871521">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="228" y="137" key="CommitChangelistDialog2" timestamp="1584075583334">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="228" y="132" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583754871521" />
-    <state x="740" y="286" key="FileChooserDialogImpl" timestamp="1584063715825">
+    <state x="228" y="137" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1584075583334" />
+    <state x="1199" y="41" width="440" height="970" key="FileChooserDialogImpl" timestamp="1585789616085">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="666" y="275" key="FileChooserDialogImpl/0.0.1728.1040@0.0.1728.1040" timestamp="1583649360154" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583663258089" />
-    <state x="740" y="286" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1584063715825" />
-    <state width="1877" height="137" key="GridCell.Tab.0.bottom" timestamp="1584075280902">
+    <state x="1199" y="41" width="440" height="970" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1585789616085" />
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1585747587056">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1685" height="343" key="GridCell.Tab.0.bottom/0.0.1728.1040@0.0.1728.1040" timestamp="1583412826361" />
     <state width="1877" height="361" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583754827008" />
-    <state width="1877" height="137" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1584075280902" />
-    <state width="1877" height="137" key="GridCell.Tab.0.center" timestamp="1584075280902">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1585747587056" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1585747587056">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1685" height="343" key="GridCell.Tab.0.center/0.0.1728.1040@0.0.1728.1040" timestamp="1583412826360" />
     <state width="1877" height="361" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583754827008" />
-    <state width="1877" height="137" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1584075280902" />
-    <state width="1877" height="137" key="GridCell.Tab.0.left" timestamp="1584075280902">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1585747587056" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1585747587056">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1685" height="343" key="GridCell.Tab.0.left/0.0.1728.1040@0.0.1728.1040" timestamp="1583412826360" />
     <state width="1877" height="361" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583754827008" />
-    <state width="1877" height="137" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1584075280902" />
-    <state width="1877" height="137" key="GridCell.Tab.0.right" timestamp="1584075280902">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1585747587056" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1585747587056">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1685" height="343" key="GridCell.Tab.0.right/0.0.1728.1040@0.0.1728.1040" timestamp="1583412826360" />
     <state width="1877" height="361" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583754827008" />
-    <state width="1877" height="137" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1584075280902" />
-    <state width="1877" height="137" key="GridCell.Tab.1.bottom" timestamp="1584075280903">
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1585747587056" />
+    <state width="1877" height="275" key="GridCell.Tab.1.bottom" timestamp="1585747587056">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="361" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583754827008" />
-    <state width="1877" height="137" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1584075280903" />
-    <state width="1877" height="137" key="GridCell.Tab.1.center" timestamp="1584075280903">
+    <state width="1877" height="275" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1585747587056" />
+    <state width="1877" height="275" key="GridCell.Tab.1.center" timestamp="1585747587056">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="361" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583754827008" />
-    <state width="1877" height="137" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1584075280903" />
-    <state width="1877" height="137" key="GridCell.Tab.1.left" timestamp="1584075280903">
+    <state width="1877" height="275" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1585747587056" />
+    <state width="1877" height="275" key="GridCell.Tab.1.left" timestamp="1585747587056">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="361" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583754827008" />
-    <state width="1877" height="137" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1584075280903" />
-    <state width="1877" height="137" key="GridCell.Tab.1.right" timestamp="1584075280903">
+    <state width="1877" height="275" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1585747587056" />
+    <state width="1877" height="275" key="GridCell.Tab.1.right" timestamp="1585747587056">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="361" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583754827008" />
-    <state width="1877" height="137" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1584075280903" />
-    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1583301129583">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="275" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1585747587056" />
+    <state width="1877" height="294" key="GridCell.Tab.2.bottom" timestamp="1584150759396">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583301129583" />
-    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1583301129583">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="294" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1584150759396" />
+    <state width="1877" height="294" key="GridCell.Tab.2.center" timestamp="1584150759396">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583301129583" />
-    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1583301129582">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="294" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1584150759396" />
+    <state width="1877" height="294" key="GridCell.Tab.2.left" timestamp="1584150759396">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583301129582" />
-    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1583301129583">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="294" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1584150759396" />
+    <state width="1877" height="294" key="GridCell.Tab.2.right" timestamp="1584150759396">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583301129583" />
+    <state width="1877" height="294" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1584150759396" />
     <state x="600" y="217" key="NewModule_or_Project.wizard" timestamp="1583487215465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="600" y="217" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1583487215465" />
-    <state x="440" y="98" key="SettingsEditor" timestamp="1584067321031">
+    <state x="440" y="98" key="SettingsEditor" timestamp="1584589625268">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="396" y="94" key="SettingsEditor/0.0.1728.1040@0.0.1728.1040" timestamp="1583411284022" />
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583488285101" />
-    <state x="440" y="98" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1584067321031" />
-    <state x="433" y="246" key="Vcs.Push.Dialog.v2" timestamp="1583754874634">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="440" y="98" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1584589625268" />
+    <state x="433" y="255" key="Vcs.Push.Dialog.v2" timestamp="1584075618421">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="433" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583754874634" />
+    <state x="433" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1584075618421" />
     <state x="692" y="336" key="com.intellij.ide.util.TipDialog" timestamp="1583649338275">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
@@ -469,9 +527,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="711" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583398872039" />
-    <state x="650" y="311" key="git4idea.merge.GitPullDialog" timestamp="1583392079113">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="650" y="323" key="git4idea.merge.GitPullDialog" timestamp="1585789605831">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="650" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583392079113" />
+    <state x="650" y="323" key="git4idea.merge.GitPullDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1585789605831" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1584341212707">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1584341212707" />
   </component>
 </project>

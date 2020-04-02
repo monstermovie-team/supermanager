@@ -1,9 +1,6 @@
 package edu.nf.movie.movie.dao;
 
-import edu.nf.movie.movie.entity.MovieInfo;
-import edu.nf.movie.movie.entity.MovieRegion;
-import edu.nf.movie.movie.entity.MovieType;
-import edu.nf.movie.movie.entity.MovieYear;
+import edu.nf.movie.movie.entity.*;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -15,7 +12,7 @@ import java.util.List;
  */
 @Repository
 public interface MovieDao {
-    List<MovieInfo> movieInfoList(@Param("pageNum") Integer pageNum, @Param("pageSize") Integer pageSize);
+    List<MovieInfo> movieInfoList(MovieInfo movieInfo,@Param("pageNum") Integer pageNum, @Param("pageSize") Integer pageSize);
 
     List<MovieInfo> movieInfoListByState(@Param("pageNum") Integer pageNum, @Param("pageSize") Integer pageSize, Integer State);
 
@@ -25,6 +22,7 @@ public interface MovieDao {
 
     List<MovieRegion> movieRegionList();
 
+    List<MovieState> movieStateList();
 
     /**
      * 电影介绍
@@ -38,7 +36,7 @@ public interface MovieDao {
      * 加载电影海报
      *芊富
      */
-    String moviePoster(Integer movieId);
+    MovieImage moviePoster(Integer movieId);
 
     /**
      * 加载电影图集
@@ -54,5 +52,15 @@ public interface MovieDao {
     List<MovieInfo> listMovieActor(Integer actorId);
 
 
+    /**
+     * 修改电影信息
+     * @param movieInfo
+     */
+    void updateMovieInfo(MovieInfo movieInfo);
 
+    /**
+     * 添加电影信息
+     * @param movieInfo
+     */
+    void addMovieInfo(MovieInfo movieInfo);
 }

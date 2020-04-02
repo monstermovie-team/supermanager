@@ -14,6 +14,12 @@ public class BaseController {
         vo.setData(data);
         return vo;
     }
+    public static <T> ResultVO<T> success(String message){
+        ResultVO<T> vo = new ResultVO<T>();
+        vo.setCode(HttpStatus.OK.value());
+        vo.setMessage(message);
+        return vo;
+    }
     public static <T> ResultVO<T> orr(String message){
         ResultVO<T> vo = new ResultVO<T>();
         vo.setCode(500);

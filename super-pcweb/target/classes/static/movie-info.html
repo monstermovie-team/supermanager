@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html class="x-admin-sm">
 <head>
+    <meta charset="UTF-8">
     <title>电影信息</title>
-    <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="./css/xadmin.css">
+
+    <link rel="stylesheet" href="lib/layui/css/layui.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/xadmin.css">
 </head>
 <body>
 <div class="x-nav">
@@ -21,29 +24,34 @@
         <div class="layui-col-md12">
             <div class="layui-card">
                 <div class="layui-card-body ">
-                    <form class="layui-form layui-col-space5">
-                        <div class="layui-input-inline layui-show-xs-block">
+                    <form id="queryForm" class="layui-form">
+                        <div class="layui-input-inline">
                             <input type="text" class="layui-input" placeholder="请输入电影名称" name="movieName">
                         </div>
-                        <div class="layui-input-inline layui-show-xs-block">
+                        <div class="layui-input-inline">
                             <select name="movieType" id="movieType">
-                                <option>电影类型</option>
+                                <option value="">电影类型</option>
                             </select>
                         </div>
-                        <div class="layui-input-inline layui-show-xs-block">
-                            <select id="movieRegion" id="movieRegion">
+                        <div class="layui-input-inline">
+                            <select name="movieRegion" id="movieRegion">
                                 <option value="">电影区域</option>
                             </select>
                         </div>
-                        <div class="layui-input-inline layui-show-xs-block">
+                        <div class="layui-input-inline">
                             <select name="movieYear" id="movieYear">
                                 <option value="">电影年代</option>
                             </select>
                         </div>
-                        <div class="layui-input-inline layui-show-xs-block">
+                        <div class="layui-input-inline">
                             <select name="movieState" id="movieState">
                                 <option value="">电影状态</option>
                             </select>
+                        </div>
+                        <div class="layui-input-inline">
+                            <button type="button" class="layui-btn" id="btnSearch">
+                                <i class="layui-icon">&#xe615;</i>
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -51,28 +59,33 @@
                     <button class="layui-btn layui-btn-danger" onclick="delAll()">
                         <i class="layui-icon"></i>批量删除
                     </button>
-                    <button class="layui-btn" onclick="xadmin.open('添加用户','./order-add.html',800,600)">
+                    <button class="layui-btn" onclick="xadmin.open('添加电影','addMovieInfo.html',700,800)">
                         <i class="layui-icon"></i>添加
                     </button>
                 </div>
-                <div class="layui-card-body ">
-                    <table class="layui-table layui-form" id="movieForm">
-                        <thead>
+                <div class="layui-card-body " id="movieDiv">
+                    <table class="layui-table layui-form" id="movieTable">
                         <tr>
                             <th>
-                                <input type="checkbox" name="" lay-skin="primary">
+                                <input type="checkbox" lay-filter="checkall" name="" lay-skin="primary">
                             </th>
                             <th>电影编号</th>
                             <th>电影海报</th>
                             <th>电影名称</th>
+                            <th>电影英文名</th>
+                            <th>想看数</th>
+                            <th>电影类型</th>
+                            <th>电影地区</th>
+                            <th>电影年份</th>
+                            <th>电影状态</th>
+                            <th>电影时长</th>
+                            <th>电影介绍</th>
                             <th>操作</th>
                         </tr>
-                        </thead>
-                        <tbody></tbody>
                     </table>
                 </div>
                 <div class="layui-card-body ">
-                    <div class="page"></div>
+                    <div class="page" id="comment_page"></div>
                 </div>
             </div>
         </div>
@@ -82,74 +95,229 @@
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="lib/layui/layui.js" charset="utf-8"></script>
 <script type="text/javascript" src="js/xadmin.js"></script>
+<script src="js/jquery.pagination.js"></script>
 <script>
     $(function(){
         load();
+        start();
+
+        function start(){
+            layui.use(['form'],function(){
+                var $ = layui.jquery;
+                var params = $('#queryForm').serialize();
+                var form = layui.form;
+                // pageNum=pageNum==""?1:pageNum;
+                $.ajax({
+                    url:'movie_list',
+                    method:'get',
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    dataType:'JSON',
+                    data:'pageNum=1&pageSize=3&' + params,
+                    success:function(result){
+                        if(result.code == 200){
+                            listMovies(result);
+                            //if(pageNum == 1){
+                            commentPage(result.data);
+                            //}
+                            form.render();
+                        }else{
+                            alert(result.message);
+                        }
+                    }
+                });
+            });
+
+        }
+
+        //加载影片列表
+        function listMovies(result) {
+            layui.use(['form'],function(){
+               var $ = layui.jquery;
+               var form = layui.form;
+                $.each(result.data.list,function(index,obj){
+                    $.ajax({
+                        url : 'movie_poster',
+                        method : 'get',
+                        data:{'movieId':obj.movieId},
+                        success : function(moviePoster){
+                            if(moviePoster.code == 200){
+                                $("#movieTable").append(
+                                    '<tr>'+
+                                    '<td>'+
+                                    '<input type="checkbox" name="" lay-skin="primary">'+
+                                    '</td>'+
+                                    '<td><div>'+obj.movieId+'</div></td>'+
+                                    '<td>' +
+                                    '<div><img alt="'+obj.movieName+'" src="'+moviePoster.data.movieImagePath+'"></div>' +
+                                    '</td>'+
+                                    '<td><div>'+obj.movieName+'</div></td>'+
+                                    '<td><div>'+obj.movieEnglishName+'</div></td>'+
+                                    '<td><div>'+obj.movieWantToSee+'</div></td>'+
+                                    '<td><div>'+obj.moviesType.movieTypeMessage+'</div></td>'+
+                                    '<td><div>'+obj.moviesRegion.movieRegionMessage+'</div></td>'+
+                                    '<td><div>'+obj.moviesYear.movieYearMessage+'</div></td>'+
+                                    '<td><div>'+obj.moviesState.movieStateMessage+'</div></td>'+
+                                    '<td><div>'+obj.movieTime+'分钟'+'</div></td>'+
+                                    '<td><div>'+obj.movieIntroduce+'</div></td>'+
+                                    '<td><div>' +
+                                    // '<input type="button" class="layui-btn updMovieInfo" value="修改" id="'+obj.movieId+'">'+
+                                    '<a onclick="xadmin.open(\'修改电影信息\',\'updateMovieInfo.html?'+obj.movieId+'\',700,800)" title="修改" href="javascript:void(0);">'+
+                                    '<i class="layui-icon">&#xe631;</i>'+
+                                    '</a>'+
+                                    '</div></td>'+
+                                    '</tr>'
+                                );
+                                form.render();
+                            }else {
+                                alert(moviePoster.message);
+                            }
+                        }
+                    });
+                });
+            });
+        }
+
+        //搜索
+        layui.use(['form'],function(){
+            var $ = layui.jquery;
+            $("#btnSearch").off('click').on('click',function(){
+                //alert($("#queryForm").serialize());
+                $('#movieTable tr:not(:first)').remove();
+                start();
+            });
+        });
 
         function load() {
-            $.ajax({
-                url : 'movie_type',
-                method : 'get',
-                success : function(result){
-                    if(result.code == 200){
-                        $.each(result.data,function (index,obj) {
-                            $("#movieType").append(
-                                "<option value='"+obj.movieTypeId+"'>"+obj.movieTypeMessage+"</option>"
-                            )
-                        });
-                    }else {
-                        alert(result.message);
+            layui.use('form', function () {
+                var $ = layui.jquery;
+                var form = layui.form;
+                //加载电影状态
+                $.ajax({
+                    url : 'movie_state',
+                    method : 'get',
+                    success : function(result){
+                        if(result.code == 200){
+                            $.each(result.data,function (index,obj) {
+                                $("#movieState").append(
+                                    "<option value='"+obj.movieStateId+"'>"+obj.movieStateMessage+"</option>"
+                                );
+                                form.render();
+                            });
+                        }else {
+                            alert(result.message);
+                        }
                     }
-                }
-            });
-            $.ajax({
-                url : 'movie_region',
-                method : 'get',
-                success : function(result){
-                    if(result.code == 200){
-                        $.each(result.data,function (index,obj) {
-                            $("#movieRegion").append(
-                                "<option value='"+obj.movieRegionId+"'>"+obj.movieRegionMessage+"</option>"
-                            )
-                        })
-                    }else {
-                        alert(result.message);
-                    }
-                }
-            });
-            $.ajax({
-                url : 'movie_year',
-                method : 'get',
-                success : function(result){
-                    if(result.code == 200){
-                        $.each(result.data,function (index,obj) {
+                });
+                //加载电影年份
+                $.ajax({
+                    url : 'movie_year',
+                    method : 'get',
+                    success : function(result){
+                        if(result.code == 200){
                             $.each(result.data,function (index,obj) {
                                 $("#movieYear").append(
                                     "<option value='"+obj.movieYearId+"'>"+obj.movieYearMessage+"</option>"
-                                )
-                            })
-                        })
-                    }else {
-                        alert(result.message);
+                                );
+                                form.render();
+                            });
+                        }else {
+                            alert(result.message);
+                        }
                     }
+                });
+                //加载电影地区
+                $.ajax({
+                    url : 'movie_region',
+                    method : 'get',
+                    success : function(result){
+                        if(result.code == 200){
+                            $.each(result.data,function (index,obj) {
+                                $("#movieRegion").append(
+                                    "<option value='"+obj.movieRegionId+"'>"+obj.movieRegionMessage+"</option>"
+                                );
+                                form.render();
+                            })
+                        }else {
+                            alert(result.message);
+                        }
+                    }
+                });
+                //加载电影类型
+                $.ajax({
+                    url : 'movie_type',
+                    method : 'get',
+                    success : function(result){
+                        if(result.code == 200){
+                            $.each(result.data,function (index,obj) {
+                                $("#movieType").append(
+                                    "<option value='"+obj.movieTypeId+"'>"+obj.movieTypeMessage+"</option>"
+                                );
+                                form.render();
+                            });
+                        }else {
+                            alert(result.message);
+                        }
+                    }
+                });
+            });
+        }
+
+        //分页
+        function commentPage(result) {//大分页
+            $('#comment_page').pagination(result.total, { //第一个参数指定共多少条记录
+                items_per_page: result.pageSize, // 每页显示多少条记录
+                next_text: '>', //下一页按钮图标
+                prev_text: '<', //上一页按钮图标
+                num_display_entries: 4,//主体页数
+                num_edge_entries: 1, //边缘页数
+                callback: function (pageNum) {//定义一个回调函数，用于每次点击页码发起分页查询请求
+                    pageNum = ++pageNum;
+                    $.ajax({
+                        url: 'movie_list',
+                        method: 'get',
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        data:'pageNum='+pageNum+'&pageSize='+result.pageSize,
+                        success: function (rp) {
+                            $('#movieTable tr:not(:first)').remove();
+                            listMovies(rp);
+                        }
+                    });
                 }
             });
         }
     });
 </script>
 <script>
-    layui.use(['laydate', 'form'],
-        function() {
-            var laydate = layui.laydate;
-            //执行一个laydate实例
-            laydate.render({
-                elem: '#start' //指定元素
-            });
-            //执行一个laydate实例
-            laydate.render({
-                elem: '#end' //指定元素
-            });
+    layui.use(['laydate','form'], function(){
+        var laydate = layui.laydate;
+        var  form = layui.form;
+
+
+        // 监听全选
+        form.on('checkbox(checkall)', function(data){
+
+            if(data.elem.checked){
+                $('tbody input').prop('checked',true);
+            }else{
+                $('tbody input').prop('checked',false);
+            }
+            form.render('checkbox');
         });
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#start' //指定元素
+        });
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#end' //指定元素
+        });
+    });
 </script>
 
 </html>

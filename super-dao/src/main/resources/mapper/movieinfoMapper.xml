@@ -68,14 +68,35 @@
         <result property="movieImageType" column="mi_type"/>
     </resultMap>
 
-
     <select id="movieInfoList" resultMap="MovieMap">
-        select movie_id,movie_name,movie_english_name,movie_want_to_see,mt_message,mr_message,my_message,ms_message,movie_time,movie_introduce
+        select movie_id,movie_name,movie_english_name,movie_want_to_see,mt_id,mt_message,mr_id,mr_message,my_id,my_message,ms_id,ms_message,movie_time,movie_introduce
         from movie_info mi
         left join movie_type mt on mi.movie_type=mt.mt_id
         left join movie_region mr on mi.movie_region=mr.mr_id
         left join movie_year my on mi.movie_year=my.my_id
         left join movie_state ms on mi.movie_state=ms.ms_id
+        <where>
+            <if test="param1.movieName != null and param1.movieName != ''">
+                mi.movie_name=#{param1.movieName}"%"
+            </if>
+            <if test="param1.movieType != null and param1.movieType != ''">
+                and mi.movie_type=#{param1.movieType}
+            </if>
+            <if test="param1.movieRegion != null and param1.movieRegion != ''">
+                and mi.movie_region=#{param1.movieRegion}
+            </if>
+            <if test="param1.movieYear != null and param1.movieYear != ''">
+                and mi.movie_year=#{param1.movieYear}
+            </if>
+            <if test="param1.movieState != null and param1.movieState != ''">
+                and mi.movie_state=#{param1.movieState}
+            </if>
+        </where>
+        order by movie_id asc
+    </select>
+
+    <select id="movieStateList" resultMap="MovieState">
+        select ms_id,ms_message from movie_state order by ms_id asc
     </select>
 
     <select id="movieInfoListByState" resultMap="MovieMap"  parameterType="java.lang.Integer">
@@ -103,7 +124,9 @@
 
 
     <select id="findMovie" resultMap="MovieMap" parameterType="integer">
-        select movie_id,movie_name,movie_english_name,movie_want_to_see,mt_message,mr_message,my_message,ms_message,movie_time,movie_introduce
+        select movie_id,movie_name,movie_english_name,movie_want_to_see,movie_type,
+        movie_year,movie_region,movie_state,mt_message,mr_id,mr_message,my_id,my_message,
+        ms_id,ms_message,movie_time,movie_introduce
         from movie_info mi
         left join movie_type mt on mi.movie_type=mt.mt_id
         left join movie_region mr on mi.movie_region=mr.mr_id
@@ -112,7 +135,7 @@
 				where movie_id = #{movieId}
     </select>
 
-    <select id="moviePoster" resultType="string" parameterType="integer">
+    <select id="moviePoster" resultMap="MovieImage" parameterType="integer">
         select mi_path from movie_image where mi_movie_id = #{movieId} and mi_type=1
     </select>
 
@@ -128,5 +151,14 @@
             left join actor_info ai on ai.actor_id=ajm.actor_id where ai.actor_id =#{actorId} and mo.mi_type=1
     </select>
 
+    <update id="updateMovieInfo" parameterType="edu.nf.movie.movie.entity.MovieInfo">
+        update movie_info set movie_name=#{movieName},movie_english_name=#{movieEnglishName},movie_want_to_see=#{movieWantToSee},
+        movie_type=#{movieType},movie_region=#{movieRegion},movie_year=#{movieYear},movie_state=#{movieState},movie_time=#{movieTime},
+        movie_introduce=#{movieIntroduce} where movie_id=#{movieId}
+    </update>
 
+    <insert id="addMovieInfo" parameterType="edu.nf.movie.movie.entity.MovieInfo">
+        insert into movie_info(movie_name,movie_english_name,movie_want_to_see,movie_type,movie_region,movie_year,movie_state,movie_time,movie_introduce)
+        values(#{movieName},#{movieEnglishName},#{movieWantToSee},#{movieType},#{movieRegion},#{movieYear},#{movieState},#{movieTime},#{movieIntroduce})
+    </insert>
 </mapper>

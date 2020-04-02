@@ -1,16 +1,22 @@
 package edu.nf.movie.movie.pcweb.controller;
 
 import com.github.pagehelper.PageInfo;
-import edu.nf.movie.movie.entity.MovieInfo;
-import edu.nf.movie.movie.entity.MovieRegion;
-import edu.nf.movie.movie.entity.MovieType;
-import edu.nf.movie.movie.entity.MovieYear;
+import edu.nf.movie.movie.entity.*;
 import edu.nf.movie.movie.pcweb.vo.ResultVO;
 import edu.nf.movie.movie.service.MovieService;
+import edu.nf.movie.util.UploadUtil;
+import edu.nf.movie.util.UploadUtil2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.Part;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 /**
@@ -24,8 +30,8 @@ public class MovieController extends BaseController{
     private MovieService movieService;
 
     @GetMapping("/movie_list")
-    public ResultVO<PageInfo<MovieInfo>> listMovie(Integer pageNum, Integer pageSize){
-        PageInfo<MovieInfo> movieInfos = movieService.movieInfoList(pageNum,pageSize);
+    public ResultVO<PageInfo<MovieInfo>> listMovie(MovieInfo movieInfo,Integer pageNum, Integer pageSize){
+        PageInfo<MovieInfo> movieInfos = movieService.movieInfoList(movieInfo,pageNum,pageSize);
         return success(movieInfos);
     }
 
@@ -51,11 +57,15 @@ public class MovieController extends BaseController{
         List<MovieYear> movieYear = movieService.movieYearList();
         return success(movieYear);
     }
+    @GetMapping("/movie_state")
+    public ResultVO listMovieState(){
+        return success(movieService.movieStateList());
+    }
 
     @GetMapping("/movie_poster")
     public ResultVO moviePoster(Integer movieId){
-        String moviePoster = movieService.moviePoster(movieId);
-        return success(moviePoster);
+        MovieImage movieImage = movieService.moviePoster(movieId);
+        return success(movieImage);
     }
 
     @GetMapping("/movie_find")
@@ -68,5 +78,28 @@ public class MovieController extends BaseController{
     public ResultVO<List<MovieInfo>> getFindMovie(Integer actorId){
         List<MovieInfo> list=movieService.listMovieActor(actorId);
         return success(list);
+    }
+
+    @RequestMapping("/uploadPoster")
+    public ResultVO uploadPoster(MultipartFile file) throws Exception{
+        InputStream is = file.getInputStream();
+        System.out.println(file.getOriginalFilename());
+        String url = "http://101.37.28.124:8080/monster_movie/movie_images/";
+        String fileName = file.getOriginalFilename();
+        UploadUtil.upload(url,is,fileName);
+        //UploadUtil2.logUpload(url,fileName);
+        return success(url+fileName);
+    }
+
+    @PostMapping("/updateMovieInfo")
+    public ResultVO updateMovieInfo(MovieInfo movieInfo){
+        movieService.updateMovieInfo(movieInfo);
+        return success("修改成功");
+    }
+
+    @PostMapping("/addMovieInfo")
+    public ResultVO addMovieInfo(MovieInfo movieInfo){
+        movieService.addMovieInfo(movieInfo);
+        return success("添加成功");
     }
 }

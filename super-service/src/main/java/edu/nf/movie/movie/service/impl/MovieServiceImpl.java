@@ -3,13 +3,12 @@ package edu.nf.movie.movie.service.impl;
 import com.github.pagehelper.PageInfo;
 import edu.nf.movie.exception.DataException;
 import edu.nf.movie.movie.dao.MovieDao;
-import edu.nf.movie.movie.entity.MovieInfo;
-import edu.nf.movie.movie.entity.MovieRegion;
-import edu.nf.movie.movie.entity.MovieType;
-import edu.nf.movie.movie.entity.MovieYear;
+import edu.nf.movie.movie.entity.*;
 import edu.nf.movie.movie.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.test.annotation.Rollback;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -18,14 +17,15 @@ import java.util.List;
  * @date 2020/3/4
  */
 @Service("movieService")
+@Transactional(rollbackFor = RuntimeException.class)
 public class MovieServiceImpl implements MovieService {
 
     @Autowired
     private MovieDao movieDao;
 
     @Override
-    public PageInfo<MovieInfo> movieInfoList(Integer pageNum, Integer pageSize) {
-        List<MovieInfo> movieInfos = movieDao.movieInfoList(pageNum,pageSize);
+    public PageInfo<MovieInfo> movieInfoList(MovieInfo movieInfo,Integer pageNum, Integer pageSize) {
+        List<MovieInfo> movieInfos = movieDao.movieInfoList(movieInfo,pageNum,pageSize);
         return new PageInfo<>(movieInfos);
     }
 
@@ -53,7 +53,10 @@ public class MovieServiceImpl implements MovieService {
         return movieRegion;
     }
 
-
+    @Override
+    public List<MovieState> movieStateList() {
+        return movieDao.movieStateList();
+    }
 
     @Override
     public MovieInfo findMovie(Integer movieId) {
@@ -66,7 +69,7 @@ public class MovieServiceImpl implements MovieService {
     }
 
     @Override
-    public String moviePoster(Integer movieId) {
+    public MovieImage moviePoster(Integer movieId) {
         try{
             return movieDao.moviePoster(movieId);
         }catch (Exception e){
@@ -94,5 +97,13 @@ public class MovieServiceImpl implements MovieService {
         }
     }
 
+    @Override
+    public void updateMovieInfo(MovieInfo movieInfo) {
+        movieDao.updateMovieInfo(movieInfo);
+    }
 
+    @Override
+    public void addMovieInfo(MovieInfo movieInfo) {
+        movieDao.addMovieInfo(movieInfo);
+    }
 }

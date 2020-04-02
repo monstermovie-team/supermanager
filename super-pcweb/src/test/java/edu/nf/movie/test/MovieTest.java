@@ -1,6 +1,7 @@
 package edu.nf.movie.test;
 
 import com.github.pagehelper.PageInfo;
+import edu.nf.movie.movie.entity.MovieImage;
 import edu.nf.movie.movie.entity.MovieInfo;
 import edu.nf.movie.movie.entity.MovieType;
 import edu.nf.movie.movie.service.MovieService;
@@ -26,7 +27,7 @@ public class MovieTest {
 
     @Test
     public void testListMovie() {
-        PageInfo<MovieInfo> pageInfo = movieService.movieInfoList(1, 5);
+        PageInfo<MovieInfo> pageInfo = movieService.movieInfoList(new MovieInfo(),1, 5);
         pageInfo.getList().forEach(movieInfo -> System.out.println(movieInfo.getMovieName()));
     }
 
@@ -51,7 +52,7 @@ public class MovieTest {
 
     @Test
     public void testMoviePoster(){
-        String s=movieService.moviePoster(1);
+        MovieImage s=movieService.moviePoster(1);
         System.out.println(s);
     }
 

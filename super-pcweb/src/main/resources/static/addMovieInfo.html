@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改电影信息</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/xadmin.css">
+    <link rel="stylesheet" href="lib/layui/css/layui.css">
+</head>
+<body>
+<div class="layui-fluid">
+    <div class="layui-row" style="margin-top:10px;">
+        <form class="layui-form" enctype="multipart/form-data" id="movieForm">
+            <div class="layui-form-item">
+                <label class="layui-form-label">
+                    <span class="x-red">*</span>电影海报</label>
+                <div class="layui-input-inline">
+                    <div id="img_sel" style="border: 1px solid #d2d2d2;width: 190px;height:263px;">
+                        <!--选择的图片-->
+                    </div>
+                    <button type="button" class="layui-btn" id="choosePoster" style="width: 190px;">
+                        <i class="layui-icon">&#xe67c;</i>上传图片
+                    </button>
+                </div>
+                <div style="float:left;">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">
+                            <span class="x-red">*</span>电影名称</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="movieName" name="movieName" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">
+                            <span class="x-red">*</span>电影英文名</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="movieEnglishName" name="movieEnglishName" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">
+                            <span class="x-red">*</span>电影想看数</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="movieWantToSee" name="movieWantToSee" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">
+                            <span class="x-red">*</span>电影时长</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="movieTime" name="movieTime" class="layui-input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">
+                    <span class="x-red">*</span>电影类型</label>
+                <div class="layui-input-inline">
+                    <select name="movieType" id="movieType"></select>
+                </div>
+                <label class="layui-form-label">
+                    <span class="x-red">*</span>电影地区</label>
+                <div class="layui-input-inline">
+                    <select name="movieRegion" id="movieRegion"></select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">
+                    <span class="x-red">*</span>电影年份</label>
+                <div class="layui-input-inline">
+                    <select name="movieYear" id="movieYear"></select>
+                </div>
+                <label class="layui-form-label">
+                    <span class="x-red">*</span>电影状态</label>
+                <div class="layui-input-inline">
+                    <select name="movieState" id="movieState"></select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">
+                    <span class="x-red">*</span>电影介绍</label>
+                <div class="layui-input-inline">
+                    <textarea class="layui-textarea" name="movieIntroduce" id="movieIntroduce" style="width: 500px;height:200px;"></textarea>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <input type="button" id="btnaddMovie" class="layui-btn" value="添加" style="margin-left: 540px;">
+            </div>
+        </form>
+    </div>
+</div>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="./lib/layui/layui.js" charset="utf-8"></script>
+<script type="text/javascript" src="./js/xadmin.js"></script>
+<script>
+    $(function(){
+        load();
+
+        function load() {
+            layui.use(['form','upload'], function () {
+                var $ = layui.jquery;
+                var form = layui.form;
+                var upload = layui.upload;
+                var movieId=location.search;
+                movieId=movieId.replace("?","");
+                //加载电影状态
+                $.ajax({
+                    url : 'movie_state',
+                    method : 'get',
+                    success : function(result){
+                        if(result.code == 200){
+                            $.each(result.data,function (index,obj) {
+                                $("#movieState").append(
+                                    "<option value='"+obj.movieStateId+"'>"+obj.movieStateMessage+"</option>"
+                                );
+                                form.render();
+                            });
+                        }else {
+                            alert(result.message);
+                        }
+                    }
+                });
+                //加载电影年份
+                $.ajax({
+                    url : 'movie_year',
+                    method : 'get',
+                    success : function(result){
+                        if(result.code == 200){
+                            $.each(result.data,function (index,obj) {
+                                $("#movieYear").append(
+                                    "<option value='"+obj.movieYearId+"'>"+obj.movieYearMessage+"</option>"
+                                );
+                                form.render();
+                            });
+                        }else {
+                            alert(result.message);
+                        }
+                    }
+                });
+                //加载电影地区
+                $.ajax({
+                    url : 'movie_region',
+                    method : 'get',
+                    success : function(result){
+                        if(result.code == 200){
+                            $.each(result.data,function (index,obj) {
+                                $("#movieRegion").append(
+                                    "<option value='"+obj.movieRegionId+"'>"+obj.movieRegionMessage+"</option>"
+                                );
+                                form.render();
+                            })
+                        }else {
+                            alert(result.message);
+                        }
+                    }
+                });
+                //加载电影类型
+                $.ajax({
+                    url : 'movie_type',
+                    method : 'get',
+                    success : function(result){
+                        if(result.code == 200){
+                            $.each(result.data,function (index,obj) {
+                                $("#movieType").append(
+                                    "<option value='"+obj.movieTypeId+"'>"+obj.movieTypeMessage+"</option>"
+                                );
+                                form.render();
+                            });
+                        }else {
+                            alert(result.message);
+                        }
+                    }
+                });
+                //添加电影信息
+                $("#btnAddMovie").off('click').on('click',function(){
+                    var params = $("#movieForm").serialize();
+                    $.ajax({
+                        url:'addMovieInfo',
+                        method:'post',
+                        data:params,
+                        success:function(result){
+                            if(result.code==200){
+                                layer.msg(result.message);
+                                //window.parent.location.reload();
+                            }else{
+                                layer.msg(result.message);
+                            }
+                            form.render();
+                        }
+                    });
+                });
+            });
+        }
+    });
+</script>
+<script>
+    layui.use('upload', function(){
+        var upload = layui.upload;
+        //执行实例
+        var uploadInst = upload.render({
+            elem: '#choosePoster', //绑定元素
+            url: 'uploadPoster', //上传接口
+            auto: false,
+            bindAction: '#btnaddMovie',
+            choose: function(obj){
+                obj.preview(function(index, file, result){
+                    layui.use(['jquery', 'layer'], function(){
+                        var $ = layui.$
+                            ,layer = layui.layer;
+                        $('#img_sel').append('<img style="width: 190px; height: auto;" src="'+ result +'" alt="'+ file.name +'" class="layui-upload-img">');
+                    });
+                });
+            },
+            done: function(res){
+                //上传完毕回调
+                if(res.code == 200){
+                    //layer.msg('上传成功');
+                    alert(res.message);
+                    // layui.use(['form'],function(){
+                    //     var $ = layui.$,layer=layui.layer;
+                         var params = $("#movieForm").serialize();
+                         alert(params.toString());
+                    //     $.ajax({
+                    //        url:'addMovieinfo',
+                    //        method:'post',
+                    //        data:params,
+                    //        success:function(result){
+                    //            if(result.code==200){
+                    //                layer.msg(result.message);
+                    //            }else{
+                    //                layer.msg(result.message);
+                    //            }
+                    //        }
+                    //     });
+                    // })
+                }else {
+                    layer.msg('上传失败');
+                    alert(res.message);
+                }
+            },
+            error: function(){
+                //请求异常回调
+            }
+        });
+    });
+</script>
+</body>
+</html>
